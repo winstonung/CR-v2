@@ -1,0 +1,52 @@
+.drawpile {
+  display: flex;
+  flex-direction: column;  /* stack vertically */
+  align-items: left;     /* center cards horizontally */
+  gap: 10px;               /* space between cards */
+  margin-bottom: 20px;     /* space below the next cards container */
+}
+
+.drawpile img {
+  width: 70px;            /* set card width */
+  height: auto;
+  display: block;
+}
+
+.drawpile-label-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.drawpile-label, span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  user-select: none; /* optional: prevent text selection */
+}
+
+.activehand {
+  display: flex;
+  flex-direction: row;      /* cards side by side */
+  justify-content: center;  /* center cards horizontally */
+  gap: 15px;                /* space between cards */
+}
+
+.activehand .card {
+  display: flex;
+  flex-direction: column;   /* stack image + text vertically */
+  align-items: center;      /* center text under image */
+}
+
+.activehand img {
+  width: 100px;             /* card size */
+  height: auto;
+  display: block;
+}
+
+.activehand span {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='display.css') }}">
+</head>
+<body>
+    <div class="drawpile">
+        <div class="drawpile-label-container">
+            <span class="drawpile-label" style="visibility: hidden;">next:</span>
+            <img id="drawpile4" src="https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png">
+            <span id="cycle-drawpile4">0/2</span>
+        </div>
+        <div class="drawpile-label-container">
+            <span class="drawpile-label" style="visibility: hidden;">next:</span>
+            <img id="drawpile3" src="https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png">
+            <span id="cycle-drawpile3">0/2</span>
+        </div>
+        <div class="drawpile-label-container">
+            <span class="drawpile-label" style="visibility: hidden;">next:</span>
+            <img id="drawpile2" src="https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png">
+            <span id="cycle-drawpile2">0/2</span>
+        </div>
+        <div class="drawpile-label-container">
+            <span class="drawpile-label">next:</span>
+            <img id="drawpile1" src="https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png">
+            <span id="cycle-drawpile1">0/2</span>
+        </div>
+    </div>
+    <div class="activehand">
+        <div class="card">
+            <span id="cycle-activehand1">0/2</span>
+            <img id="activehand1" src="https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png">
+        </div>
+        <div class="card">
+            <span id="cycle-activehand2">0/2</span>
+            <img id="activehand2" src="https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png">
+        </div>
+        <div class="card">
+            <span id="cycle-activehand3">0/2</span>
+            <img id="activehand3" src="https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png">
+        </div>
+        <div class="card">
+            <span id="cycle-activehand4">0/2</span>
+            <img id="activehand4" src="https://api-assets.clashroyale.com/cards/300/jAj1Q5rclXxU9kVImGqSJxa4wEMfEhvwNQ_4jiGUuqg.png">
+        </div>
+    </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='display.js') }}"></script>
+</body>
+</html>

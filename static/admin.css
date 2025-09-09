@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    /* Keep top aligned */
+}
+
+.cards-container {
+    display: flex;
+    align-items: center; /* center vertically with cards grid */
+    gap: 20px; /* space between cards and button */
+}
+
+.stats {
+    margin-right: 20px;
+    /* Space between stats and cards */
+}
+
+.cards, .current {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 per row */
+    gap: 10px;
+    max-width: 400px;
+    /* Prevent overflow */
+}
+
+.cards img, .current img, #limbo {
+    width: 80px;
+    /* Adjust card size */
+    height: auto;
+}
+
+#undo {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.current {
+    visibility: hidden;
+}
+
+#cardSearch {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#searchResults {
+    position: absolute;
+    background: white;
+    width: 300px;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.search-result {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-result img {
+    width: 40px;
+    height: auto;
+    margin-right: 8px;
+}
+
+.search-result:hover, .search-result.selected {
+    background: #ddd;
+}

@@ -1,0 +1,56 @@
+{
+    "drawpile": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "activehand": [
+        null,
+        null,
+        null,
+        null
+    ],
+    "deck": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+    ],
+    "limbo": null,
+    "championInDeck": null,
+    "cardsPlayed": 0,
+    "actions": [
+        [
+            [
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null
+            ],
+            [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+            ],
+            null,
+            null,
+            0
+        ]
+    ]
+}

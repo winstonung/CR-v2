@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='admin.css') }}">
+</head>
+<body>
+    <div class="stats">
+        <p>Cards played</p>
+        <p id="cardsplayed">0</p>
+    </div>
+    <div class="cards-container">
+        <div class="cards">
+            <img id="card1" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+            <img id="card2" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+            <img id="card3" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+            <img id="card4" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+            <img id="card5" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+            <img id="card6" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+            <img id="card7" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+            <img id="card8" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+        </div>
+        <button id="undo">Undo</button>
+        <img id="limbo" src="{{ url_for('static', filename='images/MysteryCard.png') }}">
+    </div>
+    <input type="text" id="cardSearch" placeholder="Search for a card...">
+    <div id="searchResults"></div>
+
+    <script src="{{ url_for('static', filename='admin.js') }}"></script>
+    <script src="{{ url_for('static', filename='display.js') }}"></script>
+</body>
+</html>
